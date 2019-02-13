@@ -1,9 +1,7 @@
-import React, {Component} from 'react'
-
-export default class extends Component {
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-}
+export {default as Container}  from './Container'
+export {default as MenuBrand}  from './MenuBrand'
+export {default as MenuContainer}  from './MenuContainer'
+export {default as Menu}  from './Menu'
+export {default as MenuItem}  from './MenuItem'
+export {default as MenuSeparator}  from './MenuSeparator'
+export {default as Sidebar}  from './Sidebar'
