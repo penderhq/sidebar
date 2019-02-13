@@ -5,7 +5,7 @@ export default class MenuItem extends React.Component {
 
     render() {
 
-        const {icon, title, active, small} = this.props
+        const {href, icon, title, active, small} = this.props
 
         return (
             <li
@@ -14,6 +14,7 @@ export default class MenuItem extends React.Component {
                 `}
             >
                 <a
+                    href={href}
                     title={title}
                     className={cx(
                         css`
