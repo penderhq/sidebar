@@ -1,16 +1,19 @@
-# sidebar
+# Sidebar
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
-Describe sidebar here.
+Used for displaying a standard application sidebar.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+## Getting started
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+````
+npm install @cmds/sidebar --save
+````
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+### More information
+
+This component is designed and developed as part of [Cosmos Design System][cmds]. 
+
+[cmds]: https://github.com/entercosmos/cosmos
+[npm-badge]: https://img.shields.io/npm/v/@cmds/sidebar.svg
+[npm]: https://www.npmjs.org/package/@cmds/sidebar
