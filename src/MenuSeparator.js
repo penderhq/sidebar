@@ -5,7 +5,7 @@ export default class MenuSeparator extends React.Component {
 
     render() {
 
-        const {large} = this.props
+        const {large, theme} = this.props
 
         return (
             <hr
@@ -13,10 +13,13 @@ export default class MenuSeparator extends React.Component {
                     css`
                     border-color: #000;
                     border-width: 1px 0 0;
-                    margin: 0;
+                    margin: 8px 0;
                 `,
                     large ? css`
                         margin-bottom: 8px;
+                    ` : null,
+                    theme === 'light' ? css`
+                        display: none;
                     ` : null
                 )}
             />

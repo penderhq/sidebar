@@ -1,11 +1,11 @@
 import React from 'react'
 import {css} from 'emotion'
 
-export default class MenuContainer extends React.Component {
+export default class MenuUser extends React.Component {
 
     render() {
 
-        const {imageFitTypeId, theme} = this.props
+        const {theme} = this.props
 
         return (
             <div
@@ -17,13 +17,14 @@ export default class MenuContainer extends React.Component {
                             display: -ms-flexbox;
                             display: flex;
                             position: relative;
-                            width: 100;
+                            width: 100%;
                             padding: 8px;
                         `}
+                onClick={this.props.onClick}
             >
                 <div
                     className={css`
-                        display: flex;
+                       display: flex;
                         align-items: center;
                         justify-content: center;
                         background-color: ${theme === 'dark' ? 'rgba(255, 255, 255, 0)' : 'rgba(0, 0, 0, 0)'};
@@ -35,11 +36,10 @@ export default class MenuContainer extends React.Component {
                             background-color: ${theme === 'dark' ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'};
                         }
                     `}
-                    onClick={this.props.onClick}
                 >
                     <div
                         className={css`
-                              display: flex;
+                                display: flex;
                                 align-items: center;
                                 padding: 12px 10px;
                                 transition: background .3s ease-in-out;
@@ -63,13 +63,12 @@ export default class MenuContainer extends React.Component {
                             <div
                                 className={css`
                                         position: absolute;
-                                        top: ${imageFitTypeId === 'cover' ? '0': '10px'};
-                                        bottom: ${imageFitTypeId === 'cover' ? '0': '10px'};
-                                        left: ${imageFitTypeId === 'cover' ? '0': '10px'};
-                                        right: ${imageFitTypeId === 'cover' ? '0': '10px'};
-                                        background-size: ${imageFitTypeId === 'cover' ? 'cover' : 'contain'};
+                                        top: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        right: 0;
                                         background-image: url(${this.props.imageUrl});
-                                        background-position: center center;
+                                        background-size: cover;
                                         background-repeat: no-repeat;
                                     `}
                             >

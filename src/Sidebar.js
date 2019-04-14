@@ -16,7 +16,7 @@ export default class Sidebar extends React.Component {
                         right: 0;
                         bottom: 0;
                         flex-direction: column;
-                        background: #181818;
+                        background: ${this.props.theme === 'dark' ? '#181818' : '#f9f9f9'};
                         color: #fff;
                         display: flex;
                     `,
@@ -24,7 +24,6 @@ export default class Sidebar extends React.Component {
                 )}
             >
                 {this.props.children}
-
             </div>
         )
     }
