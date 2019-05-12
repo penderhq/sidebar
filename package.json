@@ -1,6 +1,6 @@
 {
-  "name": "@cmds/sidebar",
-  "version": "0.3.0",
+  "name": "@pndr/sidebar",
+  "version": "0.4.0",
   "description": "Used for displaying a standard application sidebar.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -11,7 +11,7 @@
     "umd"
   ],
   "scripts": {
-    "deploy": "cd demo/dist && surge --project ./ --domain cmds-sidebar.surge.sh",
+    "deploy": "cd demo/dist && surge --project ./ --domain pndr-sidebar.surge.sh",
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
@@ -21,7 +21,7 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "emotion": "^10.0.7"
+    "emotion": "^10.0.9"
   },
   "peerDependencies": {
     "react": "16.x"
