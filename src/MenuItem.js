@@ -58,13 +58,13 @@ export default class MenuItem extends React.Component {
                         small ? css`
                             padding-top: 8px;
                             padding-bottom: 8px;
-                            color: hsla(0,0%,100%,.7);
+                            color: ${theme === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)'};
                             font-size: 14px;
                         ` : null,
                         quiet ? css`
-                            color: rgba(255, 255, 255, 0.4);
+                            color: ${theme === 'dark' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.4)'};
                             &:hover {
-                                color: hsla(0,0%,100%,.8);
+                                color: ${theme === 'dark' ? 'rgba(255, 255, 255, 0.8)' : 'rgba(0, 0, 0, 0.8)'};
                             }
                         ` : null
                     )}
