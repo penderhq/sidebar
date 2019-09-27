@@ -12,7 +12,7 @@ export default class MenuContainer extends React.Component {
                                 flex: 1 1;
                                 overflow-y: auto;
                             `,
-                    'custom-scrollbar'
+                    `custom-scrollbar-${this.props.theme}`
                 )}
             >
                 {this.props.children}

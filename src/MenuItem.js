@@ -1,11 +1,11 @@
 import React from 'react'
-import {cx, css} from 'emotion'
+import { cx, css } from 'emotion'
 
 export default class MenuItem extends React.Component {
 
     render() {
 
-        const {icon, title, active, small, quiet, theme, onClick} = this.props
+        const { icon, title, active, small, quiet, theme, onClick } = this.props
 
         return (
             <li
@@ -47,6 +47,12 @@ export default class MenuItem extends React.Component {
                         theme === 'light' ? css`
                             color: #000;
                         ` : null,
+                        small ? css`
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        color: ${theme === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)'};
+                        font-size: 14px;
+                    ` : null,
                         active ? css`
                             background-color: #07f;
                             color: #fff;
@@ -54,12 +60,6 @@ export default class MenuItem extends React.Component {
                                 background-color: #005fcc;
                                 color: #fff;
                             }
-                        ` : null,
-                        small ? css`
-                            padding-top: 8px;
-                            padding-bottom: 8px;
-                            color: ${theme === 'dark' ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.7)'};
-                            font-size: 14px;
                         ` : null,
                         quiet ? css`
                             color: ${theme === 'dark' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.4)'};
