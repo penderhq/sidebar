@@ -1,6 +1,6 @@
 {
   "name": "@pndr/sidebar",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Used for displaying a standard application sidebar.",
   "main": "lib/index.js",
   "module": "es/index.js",

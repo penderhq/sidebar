@@ -68,7 +68,7 @@ export default class MenuContainer extends React.Component {
                                         left: ${imageFitTypeId === 'cover' ? '0': '10px'};
                                         right: ${imageFitTypeId === 'cover' ? '0': '10px'};
                                         background-size: ${imageFitTypeId === 'cover' ? 'cover' : 'contain'};
-                                        background-image: url(${this.props.imageUrl});
+                                        background-image: url('${this.props.imageUrl}');
                                         background-position: center center;
                                         background-repeat: no-repeat;
                                     `}
