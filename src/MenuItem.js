@@ -54,10 +54,10 @@ export default class MenuItem extends React.Component {
                         font-size: 14px;
                     ` : null,
                         active ? css`
-                            background-color: #07f;
+                            background-color: #0022fd;
                             color: #fff;
                             &:hover {
-                                background-color: #005fcc;
+                                background-color: #182fc3;
                                 color: #fff;
                             }
                         ` : null,

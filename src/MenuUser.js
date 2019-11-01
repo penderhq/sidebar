@@ -69,6 +69,7 @@ export default class MenuUser extends React.Component {
                                         right: 0;
                                         background-image: url('${this.props.imageUrl}');
                                         background-size: cover;
+                                        background-position: center center;
                                         background-repeat: no-repeat;
                                     `}
                             >

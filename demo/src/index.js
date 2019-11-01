@@ -41,8 +41,8 @@ class Demo extends Component {
                         <MenuBrand
                             theme={theme}
                             imageFitTypeId={'cover'}
-                            imageUrl={'https://user-images.githubusercontent.com/44947294/56095223-b43e4b00-5f04-11e9-9286-4c4c03c9687b.png'}
-                            title={'Pender Base'}
+                            imageUrl={'https://user-images.githubusercontent.com/44947294/67984643-7813d300-fc27-11e9-822d-aeec9b2d97a3.png'}
+                            title={'Pender'}
                             description={'Version 1.0.0 Laika'}
                         />
                         <MenuContainer theme={theme}>
